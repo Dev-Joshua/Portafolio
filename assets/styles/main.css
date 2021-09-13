@@ -51,7 +51,7 @@ header .profile-link .items {
   text-decoration: underline;
 }
 .main { 
-  background-image: url('/assets/images/fondo-negro.jpg');
+  background-image: url('../images/fondo-negro.jpg');
   background-position: inherit;
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@ header .profile-link .items {
   /* background: black; */
 }
 .home-main {
-  background-image: url('/assets/images/fondo-codigo.jpg');
+  background-image: url('../images/fondo-codigo.jpg');
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat; 
