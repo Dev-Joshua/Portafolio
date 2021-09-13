@@ -28,7 +28,7 @@ header .profile-link {
   background-color: #000000;
 }
 header .nav-logo-container {
-  width: 100px;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
@@ -43,8 +43,12 @@ header .profile-link .items {
   align-items: center;
   justify-content: space-between;
   margin-right: 30px;
-  width: 500px;
+  width: 100%;
   font-size: 1.5rem;
+}
+.profile-link .items a:hover {
+  font-size: 2rem;
+  text-decoration: underline;
 }
 .main { 
   background-image: url('/assets/images/fondo-negro.jpg');
@@ -129,13 +133,14 @@ header .profile-link .items {
 .home-profile-description span {
   font-size: 2.5rem;
   font-weight: bold;
+  color: #c5e4e8;
 }
 .home-profile-description p {
   font-size: 1.6rem;
   width: 55%;
   margin: 0 auto;
   line-height: 1.3;
-  font-weight: 100;
+  font-weight: normal;
   font-family: inherit;
   text-align: justify;
   margin-top: 5rem;
@@ -230,6 +235,7 @@ hr{
 .about-paragraph h5, .about-paragraph-right h5 {
   color: #939393;
   font-size: 1.5rem;
+  font-style: oblique;
 }
 .about-paragraph p, .about-paragraph-right p {
   color: #fff;
@@ -298,7 +304,7 @@ hr{
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   transform: translateX(100%);
   cursor: pointer;
   transition: transform .5s ease-in-out;
@@ -364,7 +370,7 @@ footer {
   background: black;
   color: white;
   display: flex;
-  height: 100px;
+  height: 100%;
 }
 .contact-me div {
   width: 15%;
