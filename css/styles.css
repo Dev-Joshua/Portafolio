@@ -263,10 +263,10 @@ span {
   margin-top: 100px;
 }
 .container-grid article h2 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
-  font-weight: bold;
-  color: #000;
+  font-weight: 300;
+  color: #7b00ffcf;
 }
 .container-grid .container-project p {
   font-size: 16px;
@@ -288,7 +288,18 @@ span {
   align-items: center;
   text-decoration: none;
 }
-.button {
+.container-links {
+  width: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px 0px;
+}
+.container-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+/* .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -301,14 +312,14 @@ span {
   cursor: pointer;
   text-transform: uppercase;
   transition: .3s ease all;
-  border-radius: 5px;
+  border-radius: 25px;
+} */
+.container-links a:hover {
+  color: #7b00ffcf;
 }
-.button:hover {
-  background-color: #23bf88;
-}
-.container-project .button span {
+/* .container-project .button span {
   color: #000;
-}
+} */
 /* .container-project .link {
   font-weight: 400;
   font-size: 18px;
