@@ -81,7 +81,7 @@ body {
   width: 300px;
 }
 span {
-  color: rgb(18, 123, 243);
+  color: #127bf3;
 }
 
 
@@ -116,13 +116,14 @@ span {
   font-size: 25px;
 }
 .download-cv {
+  height: 50px;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
   padding: 10px 20px;
   background-color: #191c32;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   margin-bottom: 50px;
   cursor: pointer;
   box-shadow: 1px 3px 11px -5px rgba(129, 184, 248, 0.69);
@@ -172,7 +173,7 @@ span {
   justify-content: space-around;
 }
 .container-skills h3 {
-  color: #7b00ffcf;
+  color: #127bf3;
   font-weight: bold;
 }
 .container-skills ul {
@@ -265,8 +266,10 @@ span {
 .container-grid article h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
-  font-weight: 300;
-  color: #7b00ffcf;
+  font-weight: 400;
+  color: #127bf3;
+  margin: 0px;
+  padding: 30px;
 }
 .container-grid .container-project p {
   font-size: 16px;
@@ -298,6 +301,7 @@ span {
   color: #000;
   text-decoration: none;
   font-size: 1.5em;
+  transition: all 0.5s linear;
 }
 /* .button {
   display: inline-flex;
@@ -315,18 +319,63 @@ span {
   border-radius: 25px;
 } */
 .container-links a:hover {
-  color: #7b00ffcf;
-}
-/* .container-project .button span {
-  color: #000;
-} */
-/* .container-project .link {
-  font-weight: 400;
-  font-size: 18px;
-  border: none;
+  color: #23bf88;
+  transform: translateY(-10px);
 }
 
-.container-project .link span {
-  background-color: #ebf5ff;
-  color: #0068d1;
-} */
+
+.section-form {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+}
+.section-form .container-form {
+  padding: 3em;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.container-form h3 {
+  font-size: 3em;
+  text-align: start;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 30vw;
+}
+.form input {
+  padding: 20px 30px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
+}
+.form textarea {
+  height: 150px;
+  background: none;
+  color: #fff;
+  padding: 1.5em;
+  font-size: 18px;
+  border: 1px solid #fff;
+}
+.btn-submit {
+  padding: 20px 30px;
+  margin: 20px 0px;
+  border: none;
+  /* text-transform: uppercase; */
+  background-color: #127bf3;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.btn-submit:hover {
+  background-color: #fff;
+  color: #000;
+}
