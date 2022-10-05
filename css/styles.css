@@ -86,7 +86,7 @@ span {
 
 
 .container-devices {
-  margin-top: 50px;
+  margin-top: 80px;
   padding: 0rem 1.5rem;
 }
 .container-devices img {
@@ -129,7 +129,7 @@ span {
   box-shadow: 1px 3px 11px -5px rgba(129, 184, 248, 0.69);
 }
 .download-cv:hover {
-  background-color: #fff;
+  background-color: #23bf88;
   box-shadow: none;
   color: #000;
 }
@@ -291,10 +291,7 @@ span {
   margin: 10px;
   box-shadow: 5px 5px 10px #7b00ffcf;
 }
-.container-project a {
-  align-items: center;
-  text-decoration: none;
-}
+
 .container-links {
   width: 20vw;
   display: flex;
@@ -329,7 +326,7 @@ span {
 
 
 .section-form {
-  margin-top: 100px;
+  margin: 30px;
   width: 100%;
   display: flex;
 }
@@ -370,9 +367,9 @@ span {
 .btn-submit {
   padding: 20px 30px;
   margin: 20px 0px;
-  border: none;
+  border: 1px solid #127bf3;
   /* text-transform: uppercase; */
-  background-color: #127bf3;
+  background: none;
   border-radius: 25px;
   cursor: pointer;
   color: #fff;
@@ -380,8 +377,8 @@ span {
   font-weight: bold;
 }
 .btn-submit:hover {
-  background-color: #fff;
-  color: #000;
+  border: 1px solid #23bf88;
+  background-color: #23bf8839;
 }
 footer {
   width: 100%;
@@ -393,8 +390,30 @@ footer p {
   font-family: 'Eurostile Extended', sans-serif;
   width: 500px;
   text-align: center;
-  padding: 50px;
+  padding: 35px;
   font-weight: 300;
   font-size: 25px;
   color: #c2c4d3;
+}
+footer p:nth-child(3) {
+  font-size: 18px;
+}
+footer .container-redes {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  margin: 30px;
+}
+.container-redes a img {
+  width: 50px;
+}
+.container-redes a {
+  border-radius: 45px;
+  padding: 10px;
+  font-size: 1.5em;
+  transition: all 1s linear;
+}
+.container-redes a:hover {
+  background-color: #127bf3;
+  transform: translateY(-10px);
 }
