@@ -68,7 +68,7 @@ body {
   font-size: 3em;
   font-family: 'Eurostile Extended', sans-serif;
   letter-spacing: 4px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .info-content h2 {
   letter-spacing: 4px;
@@ -370,15 +370,18 @@ span {
   border: 1px solid #127bf3;
   /* text-transform: uppercase; */
   background: none;
-  border-radius: 25px;
+  border-radius: 35px;
   cursor: pointer;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
 }
 .btn-submit:hover {
-  border: 1px solid #23bf88;
-  background-color: #23bf8839;
+  border: 1px solid #7b00ffcf;
+  background-color: #7b00ffcf;
+}
+#send-info {
+  opacity: 0;
 }
 footer {
   width: 100%;
