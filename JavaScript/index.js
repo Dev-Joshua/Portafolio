@@ -1,4 +1,4 @@
-
+//guardo las id etiquetas del documento HTML en estas variables
 const $form = document.getElementById('form')
 const $buttonMailto = document.getElementById('send-info')
 //Escucho el evento submit de mi formulario
