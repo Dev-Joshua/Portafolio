@@ -29,29 +29,31 @@ body {
 .brand img {
   width: 100px;
 }
-.menu {
+.list-ul {
   display: flex;
   /* width: 60%; */
-  justify-content: space-around;
   gap: 10px;
 }
-.menu li {
+.list-ul li {
   list-style: none;
 }
-.menu a {
+.list-ul a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   margin: 0px 10px;
 }
-/* .menu .active {
+/* .list-ul .active {
   color: #127bf3;
 } */
-.menu a:hover {
+.list-ul a:hover {
   background-color: #6ec9fe;
   color: #191c32;
   transition: ease-in 0.4s;
   padding: 5px;
+}
+.toggle-menu {
+  display: none;
 }
 
 /* body */
@@ -107,7 +109,7 @@ span {
   letter-spacing: 4px;
   font-size: 2rem;
 }
-.container-info h2 {
+.container-info p {
   padding: 30px;
   text-align: justify;
   font-size: 16px;
@@ -462,7 +464,7 @@ footer .container-redes {
   .brand img {
     width: 90px;
   }
-  .menu a {
+  .list-ul a {
     font-size: 18px;
   }
   .info-content {
@@ -536,8 +538,64 @@ footer .container-redes {
 }
 
 @media (max-width: 800px) {
-  .menu {
+  .navbar {
+    height: 80px;
+    padding: 0;
+  }
+  .brand {
     display: none;
+  }
+  .list-ul {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 20px;
+    left: 0px;
+    top: 0px;
+    background: #000;
+    width: 100%;
+    height: -webkit-fill-available;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+  }
+  .list-ul li {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .list-ul li:nth-child(1) {
+    margin-top: 30px;
+  }
+  .close-list {
+    transform: translateX(-100%);
+  }
+  .toggle-menu {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .toggle-menu span {
+    width: 35px;
+    height: 4px;
+    background: #fff;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 8px 0px;
+    transition: all 0.2s linear;
+  }
+  .close span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+  .close span:nth-child(2) {
+    display: none;
+  }
+  .close span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+  .open {
+    transform: translateX(0);
   }
   .info-content {
     width: auto;
@@ -547,6 +605,7 @@ footer .container-redes {
   }
   .info-content h2 {
     font-size: 12px;
+    z-index: 0;
   }
   .container-avatar img {
     width: 150px;
